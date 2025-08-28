@@ -1,0 +1,17 @@
+services:
+
+  symfony-openswoole-skeleton:
+    container_name: ${APP_DOCKER_TAG}
+    platform: linux/amd64
+    image: ${APP_DOCKER_TAG}
+    environment:
+      # Enable OpenSwoole's autoreload feature for development
+      AUTORELOAD_PROGRAMS: "openswoole" # supervisord's [program:openswoole]
+      # If environment variable AUTORELOAD_ANY_FILES is set to "true", "1", "yes", or "y", reload Supervisor programs when
+      # any files under the root directory (/var/www by default) is changed; otherwise, reload only when PHP file(s) are
+      # changed.
+      AUTORELOAD_ANY_FILES: 0
+    volumes:
+      - .:/var/www:rw
+    ports:
+      - "8000:9501"

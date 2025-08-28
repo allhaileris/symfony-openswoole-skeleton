@@ -1,0 +1,12 @@
+.git
+.idea
+.vscode
+var
+vendor
+.dockerignore
+.editorconfig
+.envrc
+.gitignore
+Dockerfile
+Makefile
+shell.nix
