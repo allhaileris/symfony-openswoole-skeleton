@@ -70,7 +70,10 @@
         }
     },
     "require-dev": {
-        "openswoole/ide-helper": "^22.1",
+        "openswoole/ide-helper": "^22.1.5",
+        "phpunit/phpunit": "^11.5",
+        "symfony/browser-kit": "7.3.*",
+        "symfony/css-selector": "7.3.*",
         "symfony/maker-bundle": "^1.64",
         "symfony/stopwatch": "7.3.*",
         "symfony/web-profiler-bundle": "7.3.*"
